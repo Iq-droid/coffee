@@ -19,24 +19,24 @@ def power(a, b):
     return a ** b
 
 opt = int(input("Choose Operation from 1(Add), 2(Sub), 3(Multi), 4(Div), 5(Square Root), 6(Power) = "))
-n1 = int(input("First Number = "))
+a = int(input("First Number = "))
 
 if opt == 1:
-    n2 = int(input("Second Number = "))
-    print(n1, ' + ', n2, '  =  ', addition(n1, n2))
+    b = int(input("Second Number = "))
+    print(a, ' + ', b, '  =  ', addition(a, b))
 elif opt == 2:
-    n2 = int(input("Second Number = "))
-    print(n1, ' - ', n2, '  =  ', subtraction(n1, n2))
+    b = int(input("Second Number = "))
+    print(a, ' - ', b, '  =  ', subtraction(a, b))
 elif opt == 3:
-    n2 = int(input("Second Number = "))
-    print(n1, ' * ', n2, '  =  ', multiplication(n1, n2))
+    b = int(input("Second Number = "))
+    print(a, ' * ', b, '  =  ', multiplication(a, b))
 elif opt == 4:
-    n2 = int(input("Second Number = "))
-    print(n1, ' / ', n2, '  =  ', division(n1, n2))
+    b = int(input("Second Number = "))
+    print(a, ' / ', b, '  =  ', division(a, b))
 elif opt == 5:
-    print('Square Root of', n1, ' = ', square_root(n1))
+    print('Square Root of', a, ' = ', square_root(a))
 elif opt == 6:
-    n2 = int(input("Power = "))
-    print(n1, ' ^ ', n2, '  =  ', power(n1, n2))
+    b = int(input("Power = "))
+    print(a, ' ^ ', b, '  =  ', power(a, b))
 else:
     print('Invalid Input')
